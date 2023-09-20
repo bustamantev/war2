@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1.0 , maximum-scale=1.0, minimum-scale=1">
+    <title>Accion</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagenes/Captura.PNG' %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="bg" style="background-image: url('{% static "imagenes/ground.png" %}')" text="white">
+    <center>
+        <header>
+            <h2 class="logo">Accion</h2>
+            <nav class="navi">
+                <a href={% url 'index' %}>Inicio</a>
+                <a href={% url 'videojuegos' %}>Videojuegos</a>
+                <a href={% url 'form' %}>Perfil</a>
+                
+            </nav>
+        </header>
+
+    <div>
+        <nav>
+            <a href={% url 'spacemarine' %}></b>     
+                <img src="{% static 'imagenes/spacemarine.jpg' %}"
+                alt="Warhammer 40k Space Marine" >
+        </nav>
+    </div>
+
+    <div>
+        <nav>
+            <a href={% url 'spacemarine2' %}></b>     
+                <img src="{% static 'imagenes/spacemarine2.jpg' %}"
+                alt="Warhammer 40k Space Marine 2" >
+        </nav>
+    </div>    
+
+    <div>
+        <nav>
+            <a href={% url 'videojuegos' %}>volver</a>
+        </nav>
+    </div>
+    <div>
+        <audio controls autoplay unmuted loop >
+            <source src="{% static 'media/Warham.mp3' %}" >
+        </audio>
+    </div>
+    </center>
+</body>
+</html>

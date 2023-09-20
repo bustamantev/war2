@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1.0 , maximum-scale=1.0, minimum-scale=1">
+    <title> Space Marine</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagenes/Captura.PNG' %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body body id="bg" style="background-image: url('{% static "imagenes/ground.png" %}')" text="white">
+    <center>
+        <header>
+            <h2 class="logo">Warhammer 40.000 Space Marine 2</h2>
+            <nav class="navi">
+                <a href={% url 'index' %}>Inicio</a>
+                <a href={% url 'videojuegos' %}>Videojuegos</a>
+                <a href={% url 'form' %}>Perfil</a>
+                
+            </nav>
+        </header>
+
+        </nav>        
+        <img src="{% static 'imagenes/spacemarine2.jpg' %}" style="float: center;"
+        alt="Space Marine 2">
+
+        <p>La galaxia corre peligro. Es el fin numerosos planetas. El Imperio te necesita.</p>
+
+        <p>Despliega las habilidades sobrehumanas y la brutalidad de un Marine Espacial, el mejor cuerpo de guerreros del Emperador. Aprovecha tus capacidades mortíferas y un arsenal devastador para acabar con las implacables hordas del enemigo.</p>
+
+        <p>Aplaca los horrores de la galaxia en épicas batallas sobre planetas remotos. Descubre misterios oscuros y pon freno a la noche eterna para demostrar tu fidelidad.</p>
+
+        <p>Acude a la llamada.</p>
+
+        <p>Prepárate para la guerra.</p>
+
+        <p>
+            PRECIO TBA
+        </p>
+        
+        <div>
+            <nav>
+                <a href={% url 'accion' %}>volver</a>
+            </nav>
+        </div>
+        <audio controls autoplay unmuted loop >
+            <source src="{% static 'media/Warham.mp3' %}" >
+        </audio>
+
+    </center>
+</body>
+</html>    
+    
